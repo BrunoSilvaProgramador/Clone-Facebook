@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+::-webkit-scrollbar-track {
+    background-color: rgb(65, 63, 63);
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: rgb(65, 63, 63);
+}
+::-webkit-scrollbar-thumb {
+    background: #222121;
+    border-radius: 9px;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    max-height: 65px;
+    background-color: #3b5998;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+.center-header{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    max-height: 60px;
+}
+.logo img{
+    width:18%;
+    min-width: 100px;
+    margin-top: 15px;
+}
+.endereço{
+    display: flex;
+}
+.conta label{
+    font-size: 14px;
+    margin-left: 2px;
+    color: white;
+}
+.conta, .password{
+     margin-right: 5px;
+     margin-top: 5px;
+}
+.password label{
+    font-size: 14px;
+    margin-left: 2px;
+    color: white;
+}
+.password button{
+    font-size: 11px;
+    color: rgb(177, 177, 177);
+    background: transparent;
+    border: none;
+    margin-left: 2px;
+    cursor: pointer;
+}
+.password button:hover{
+    color: rgb(255, 255, 255);
+}
+.enviar button{
+    background-color: #3b5998;
+    color: white;
+    box-shadow: rgb(4, 4, 102) 0px 0.5px 3px;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+}
+.enviar{
+    line-height: 60px;
+    margin-top: 1px;    
+}
+.conta input:focus, .password input:focus{
+    background-color: #e8f0fe;
+    border: none;
+}
+
+
+        /* main */
+
+
+.main{
+    width: 100%;
+    height: 100vh;
+    max-height: 390px;
+    background-color: #e3e7f0;
+    border-bottom: 2px solid rgb(207, 207, 207);
+}
+.center-main{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;  
+    max-height: 300px;
+    justify-content: space-between;
+}
+.conectar{
+    width: 45%;
+    margin-top: 15px;
+}
+.conectar img{
+    width: 100%;    
+    margin-top: 20px;   
+}
+.texto{
+    width: 80%;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.span{
+    display: flex;
+}
+.span span{
+    margin-left: 10px;
+    max-width: 110px;       
+    font-size: 10px;
+}
+.span a{
+    text-decoration: none;
+    color: black;
+}
+.termos{
+    max-width: 250px;
+    font-size: 10px;
+}
+.termos a{
+    text-decoration: none;
+    color: rgb(111, 8, 230);
+}
+.footer{
+    width: 100%;
+    height: 100vh;
+    max-height: 188px;
+    background-color: rgb(255, 255, 255);
+}
+.center-footer{ 
+    width: 60%;
+    max-height: 203px;
+    margin: 0 auto; 
+    
+}
+
+.criar-nova-conta{
+    margin-top: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.criar-nova-conta h4{
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+.nome-sobrenome{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+.nome-sobrenome input{
+    width: 49%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.celular-email input, .nova-senha input{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-bottom: 6px;
+}
+.data-de-nascimento label{
+    font-size: 14px;
+}
+.data-de-nascimento input{
+    margin-top: 1px;
+}
+.radio{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.radio label{
+    margin-right: 10px;
+}
+
+.cadastre-se button{
+    width: 40%;
+    padding: 6px;
+    margin-top: 10px;
+    border: 0.3px solid rgb(120, 201, 116);
+    background-color: green;
+    box-shadow: -1px 1px 2px rgb(2, 61, 2);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(214, 212, 212);
+}
+.cadastre-se button:hover{
+    color: white;
+}
+
+.criar-pagina{
+    font-size: 13px;
+    margin-top: 10px;
+}
+.criar-pagina a{
+    text-decoration: none;
+}
+
+.lang{
+    width: 100%;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid gray;
+    line-height: 30px;
+}
+.lang button{       
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+.lang a{
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+    margin-right: 10px;
+}
+
+.links{
+    width: 100%;
+    font-size: 12px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+.links a{
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+    margin-right: 10px;
+}
+.links a:hover{
+    color: rgb(0, 0, 0);
+}
+.lang a:hover{
+    color: rgb(0, 0, 0);
+}
+.center-footer p{
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 800px){
+    .center-main{
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;  
+    }
+    .main{
+        width: 100%;
+        height: 100vh;
+        max-height: 670px;
+        background-color: #e3e7f0;
+        border-bottom: 2px solid rgb(207, 207, 207);
+    }
+    .conectar{
+        width: 100%;
+        margin-top: 15px;
+        margin-top: 30px;
+    }
+    .criar-nova-conta{
+        margin-top: 15px;
+        width: 100%;
+        margin-left: 30px;
+    }
+    .center-footer{
+        margin-left:5%;
+        width: 90%;
+    }
+    .lang{
+        font-size: 10px;
+    }
+    .main{
+        height: 680px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .center-main, .center-header{
+        margin-left: 15%; 
+    }
+}
+@media screen and (max-width: 600px){
+    .center-header{
+        margin-left: 10%; 
+    }
+    .conectar{
+        width: 120%;
+        margin-top: 15px;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 550px){
+    .center-header{
+        margin-left: 5%; 
+    }
+}
+@media screen and (max-width: 570px){
+    .center-header{
+        flex-direction: column;
+        margin-left: 15%;
+    }
+    .header{
+        max-height: 130px;  
+    }
+    .logo {
+        text-align: center;
+        margin-left: 15%;
+    }
+    .endereço{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 450px){
+    .endereço{
+        text-align: center;
+        margin-left: -5%;
+    }
+}
+@media screen and (max-width: 400px){
+    .endereço{
+        text-align: center;
+        margin-left: -15%;
+    }
+    .center-main{
+        margin-left: 0%; 
+        width: 80%;
+    }
+}
+@media screen and (max-width: 480px){
+    .endereço, .conta, .password{
+        display: flex;
+        flex-direction: column;
+        line-height: 20px;
+    }
+    .header{
+        max-height: 230px;
+    }
+    .endereço{
+        margin-left: 15%;
+    }
+    .logo{
+        margin-left: 10%;
+    }
+    
+}
+@media screen and (max-width: 300px){
+    .center-main{
+        margin-left: -7%; 
+        width: 90%;
+    }
+    .cadastre-se button{
+        width: 70%;
+        min-width: 60px;
+        text-align: center;        
+    }
+    .cadastre-se{
+        text-align: center;        
+    }
+}
+@media screen and (max-width: 246px){
+    .header{
+        max-height: 250px;
+    }
+    .main{
+        height: 720px;
+        max-height: none;
+    }
+}
+@media screen and (max-width: 206px){
+    .main{
+        height: 750px;
+    }
+}
